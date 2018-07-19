@@ -53,7 +53,7 @@
               <li role="presentation" class="active"><a href="#profil" aria-controls="profil" role="tab" data-toggle="tab"><span class="fa fa-book"></span> Profil</a></li>
               <li role="presentation"><a href="#foto" aria-controls="foto" role="tab" data-toggle="tab"><span class="fa fa-image"> </span> Foto</a></li>
             </ul>
-            <div class="tab-content" style="margin-bottom: 0;">
+            <div class="tab-content" style="margin-bottom: -30px;">
                 <div role="tabpanel" class="tab-pane active" id="profil">
                     <div class="row">
                         <div class="col-md-6">
@@ -82,12 +82,12 @@
                                   <h4 class="content"><?php echo $warna['warna'] ?></h4>
                               </li>
                               <li class="list-group-item">
-                                  <p class="text-muted title">Ukuran</p>
-                                  <h4 class="content"><?php echo $barang['ukuran'] ?></h4>
-                              </li>
-                              <li class="list-group-item">
                                   <p class="text-muted title">Stok</p>
                                   <h4 class="content"><?php echo $barang['stok'] ?></h4>
+                              </li>
+                              <li class="list-group-item">
+                                  <p class="text-muted title">Ukuran</p>
+                                  <h4 class="content"><?php echo $barang['ukuran'] ?></h4>
                               </li>
                               <li class="list-group-item">
                                   <p class="text-muted title">Status</p>
@@ -105,42 +105,27 @@
                               <h4 class="content"><?php echo $barang['modal'] ?></h4>
                           </li>
                           <li class="list-group-item">
-                              <p class="text-muted title">Harga 1</p>
-                              <h4 class="content"><?php echo $barang['harga1'] ?></h4>
-                          </li>
-                          <li class="list-group-item">
-                              <p class="text-muted title">Harga 2</p>
-                              <h4 class="content"><?php echo $barang['harga2'] ?></h4>
-                          </li>
-                          <li class="list-group-item">
-                              <p class="text-muted title">Harga 3</p>
-                              <h4 class="content"><?php echo $barang['harga3'] ?></h4>
-                          </li>
-                          <li class="list-group-item">
-                              <p class="text-muted title">Harga 4</p>
-                              <h4 class="content"><?php echo $barang['harga4'] ?></h4>
-                          </li><li class="list-group-item">
-                              <p class="text-muted title">Harga 5</p>
-                              <h4 class="content"><?php echo $barang['harga5'] ?></h4>
-                          </li>
-                          <li class="list-group-item">
                               <p class="text-muted title">Diskon</p>
                               <h4 class="content"><?php echo $barang['diskon'] ?></h4>
+                          </li>
+                          <li class="list-group-item">
+                              <p class="text-muted title">Harga Dasar</p>
+                              <h4 class="content"><?php echo $barang['hargadasar'] ?></h4>
                           </li>
                         </ul>
                     </div>
                 </div>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="foto">
-                    <div class="col-md-6" style="border:1px solid #ddd; margin-bottom: 20px; border-radius: 5px;">
+                    <div class="col-md-6" style="border:1px solid #ddd; margin-bottom: 10px; border-radius: 5px;">
                         <div class="foto">
                             <img src="<?php echo base_url(); ?>assets/foto/<?php echo $listfoto[0]['file']; ?>" alt="" width="320">
                         </div>
                     </div>
                 </div>
             </div>
-           <div class="col-md-12 nopadding">
-               <a href="<?php echo base_url(); ?>barang" class="btn btn-warning" style="margin-bottom: 10px;""><span class="fa fa-list"></span> Daftar Barang</a>
+           <div class="container-fluid">
+               <a href="<?php echo base_url(); ?>barang" class="btn btn-warning" style="margin-bottom: 20px;""><span class="fa fa-list"></span> Daftar Barang</a>
            </div> 
 			</div>
 		</div>

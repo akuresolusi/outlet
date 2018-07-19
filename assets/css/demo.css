@@ -7,7 +7,8 @@
     margin-top: -10px;
 }
 .btn-xs{
-    padding: 3px 8px;
+    padding: 3px 10px;
+    font-size: 10px;
 }
 .btn-add{
     float: right;

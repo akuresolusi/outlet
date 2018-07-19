@@ -1,7 +1,7 @@
 <div class="panel panel-default panel-title">
 	<div class="panel-body title-pos">
 		<div class="col-md-6" style="padding: 0;">
-    		<span id="sub-title">Sales</span>
+    		<span id="sub-title">Laporan</span>
     		<h3 class="page-title"><?php echo $title; ?></h3>
 		</div>
 	</div>
@@ -34,5 +34,6 @@
 				</tr>
 			</tbody>
 		</table>
+		<a type="submit" class="btn btn-success"><span class="fa fa-print"></span> Print</a>
 	</div>
 </div>

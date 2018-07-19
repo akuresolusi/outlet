@@ -25,7 +25,7 @@
 						<th>Tujuan</th>
 						<th>Keterangan</th>
 						<th>User</th>
-						<th width="10">Aksi</th>
+						<th width="10"></th>
 					</thead>
 					<tbody>
 						<td>1</td>

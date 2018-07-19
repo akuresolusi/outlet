@@ -14,14 +14,14 @@ class Pos extends CI_Controller {
 		$this->load->view('layout-pos',$data);
 	}
 
-	public function list(){
-		$data['content'] =  "pos/list-transaksi";
-		$data['title'] = 'Daftar Transaksi Hari Ini';
-		$this->load->view('layout-pos',$data);
-	}
 	public function all(){
 		$data['content'] =  "pos/all-transaksi";
 		$data['title'] = 'Daftar Transaksi';
+		$this->load->view('layout-pos',$data);
+	}
+	public function today(){
+		$data['content'] =  "pos/today-transaksi";
+		$data['title'] = 'Pendapatan Hari Ini';
 		$this->load->view('layout-pos',$data);
 	}
 

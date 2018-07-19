@@ -16,6 +16,22 @@ th{
   font-weight: 600;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-top: 15px;
+  padding-bottom: 10px; }
+
+.copyright {
+  margin-bottom: 0;
+  text-align: right;
+  font-size: 13px; }
+  @media screen and (max-width: 767px) {
+    .copyright {
+      text-align: center;
+      position: relative !important; } }
+
 .table>tbody>tr>td {
     padding: 4px 10px;
     line-height: 1.42857143;
@@ -364,8 +380,7 @@ fieldset[disabled] .btn {
 .add-cust{
   width: 100%;
   margin-bottom: 10px;
-  padding: 5px 10px 10px 10px;
-  padding-bottom: 12px;
+  padding:5px 5px 15px 5px;
   border-bottom: 1px solid #eee;
 }
 .pricetotal{
@@ -375,7 +390,7 @@ fieldset[disabled] .btn {
 }
   .add-cust #user{
     font-size: 15px;
-    margin-left: 10px;
+    margin-left: 5px;
   }
   .pricetotal #user{
     font-size: 16px;

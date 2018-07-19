@@ -59,20 +59,12 @@
 	    </div>
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav navbar-right">
-	      	<li><a href="<?php echo base_url() ?>pos"><i class="fa fa-home menu_r"></i> <span class="menu_r">Home</span></a></li>
-	      	<li class="dropdown">
-		        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="menu_r"> Sales</span>
-		        <span class="caret menu_r"></span></a>
-		        <ul class="dropdown-menu">
-		          <li><a href="<?php echo base_url() ?>pos/list"><i class="fa fa-list"></i> Daftar Transaksi</a></li>
-		          <li><a href="#" data-toggle="modal" data-target="#ModalListHold"><i class="fa fa-list"></i> Daftar Tahan Transaksi</a></li>
-		        </ul>
-     	 	</li>
+	      	<li><a href="<?php echo base_url() ?>pos"><i class="fa fa-home menu_r"></i> <span class="menu_r">POS</span></a></li>
 	      	<li class="dropdown">
 		        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="menu_r"> Laporan</span>
 		        <span class="caret menu_r"></span></a>
 		        <ul class="dropdown-menu">
-		          <li><a href="#"><i class="fa fa-dollar"></i> Pendapatan Hari Ini</a></li>
+		          <li><a href="<?php echo base_url() ?>pos/today"><i class="fa fa-dollar"></i> Pendapatan Hari Ini</a></li>
 		          <li><a href="<?php echo base_url() ?>pos/all"><i class="fa fa-calendar"></i> Keseluruhan Transaksi</a></li>
 		          <li><a href="#"><i class="fa fa-cubes"></i> Top Produk Terjual</a></li>
 		        </ul>
@@ -92,142 +84,11 @@
 		<?php $this->load->view($content); ?>
 	</div>
 	<!-- END CONTENT -->
-
-<!-- MODAL BAYAR -->
-<div class="modal fade" id="ModalBayar" role="dialog">
-    <div class="modal-dialog modal-sm">
-    
-      <!-- Modal content-->
-	  	<div class="modal-content">
-		    <div class="modal-header">
-		      <button type="button" class="close" data-dismiss="modal">&times;</button>
-		      <h4 class="modal-title"><b>Pembayaran</b></h4>
-		    </div>
-		    <div class="modal-body">
-		      <div class="container-fluid">
-		      	<?php echo form_open(''); ?>
-		      		<div class=" form-group">
-				  		<label>Customer</label>
-				  		<select class="form-control">
-				  			<option>Walk-in Customer</option>
-				  		</select>
-				  	</div>
-				  	<div class=" form-group">
-				  		<label>Jenis Pembayaran</label>
-				  		<select class="form-control">
-				  			<option>Cash</option>
-				  			<option>Credit Card</option>
-				  		</select>
-				  	</div>
-				  	<div class=" form-group">
-				  		<label>Total</label>
-				  		<input type="text" name="" class="form-control" readonly="" value="Rp 10.000" style="font-weight: bold;">
-				  	</div>
-				  	<div class=" form-group">
-				  		<label>Dibayar</label>
-				  		<input type="number" name="" class="form-control">
-				  	</div>
-				  	<div class=" form-group">
-				  		<label>Kembalian</label>
-				  		<input type="text" name="" class="form-control" readonly="" style="font-weight: bold;">
-				  	</div>
-				    <div  class="form-group">
-				    	<button type="submit" class="btn btn-primary"><span class="fa fa-save"></span> Simpan</button>
-				    	<button type="reset" class="btn btn-danger"><span class="fa fa-remove"></span> Batal</button>
-					</div>
-					<?php echo form_close() ?>
-		      </div>
-		    </div>
-		    <div class="modal-footer">
-		      <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
-		    </div>
-	 	 </div>
-	  
-	</div>
-</div>
-<!-- END MODAL BAYAR -->
-
-<!-- MODAL HOLD -->
-<div class="modal fade" id="ModalListHold" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-	  	<div class="modal-content">
-		    <div class="modal-header">
-		      <button type="button" class="close" data-dismiss="modal">&times;</button>
-		      <h4 class="modal-title"><b>Daftar Tahan Pesanan</b></h4>
-		    </div>
-		    <div class="modal-body">
-		      <div class="container-fluid">
-		      	<table class="table">
-		      		<thead>
-		      			<th>Keterangan</th>
-		      			<th>Tanggal</th>
-		      			<th>Item</th>
-		      			<th>Total</th>
-		      			<th width="10"></th>
-		      		</thead>
-		      		<tbody>
-		      			<tr>
-			      			<td>Pesanan Meja 2</td>
-			      			<td>21/07/2018 06:04:00</td>
-			      			<td>4</td>
-			      			<td>Rp 20.000</td>
-			      			<td><a href="" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i></a></td>
-		      			</tr>
-		      			<tr>
-			      			<td>Pesanan Meja 2</td>
-			      			<td>21/07/2018 06:04:00</td>
-			      			<td>4</td>
-			      			<td>Rp 20.000</td>
-			      			<td><a href="" class="btn btn-primary btn-xs"><i class="fa fa-eye"></i></a></td>
-		      			</tr>
-		      		</tbody>
-		      	</table>
-		      </div>
-		    </div>
-		    <div class="modal-footer">
-		      <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
-		    </div>
-	 	 </div>
-	  
-	</div>
-</div>
-<!-- END MODAL HOLD -->
-
-<!-- MODAL HOLD -->
-<div class="modal fade" id="ModalHold" role="dialog">
-    <div class="modal-dialog modal-sm">
-    
-      <!-- Modal content-->
-	  	<div class="modal-content">
-		    <div class="modal-header">
-		      <button type="button" class="close" data-dismiss="modal">&times;</button>
-		      <h4 class="modal-title"><b>Tahan Pesanan</b></h4>
-		    </div>
-		    <div class="modal-body">
-		      <div class="container-fluid">
-		      	<?php echo form_open(''); ?>
-				  	<div class=" form-group">
-				  		<label>Keterangan</label>
-				  		<input type="text" name="" class="form-control" placeholder="Keterangan Pesanan">
-				  	</div>
-				    <div  class="form-group">
-				    	<button type="submit" class="btn btn-primary"><span class="fa fa-save"></span> Simpan</button>
-				    	<button type="reset" class="btn btn-danger"><span class="fa fa-remove"></span> Batal</button>
-					</div>
-					<?php echo form_close() ?>
-		      </div>
-		    </div>
-		    <div class="modal-footer">
-		      <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
-		    </div>
-	 	 </div>
-	  
-	</div>
-</div>
-<!-- END MODAL HOLD -->
-
+	<footer>
+		<div class="container-fluid">
+			<p class="copyright">&copy; 2018 <a href="http://akure-solusi.com" target="_blank" id="Quick Count">Akure Solusi</a>. All Rights Reserved.</p>
+		</div>
+	</footer>
 
 
 	<!-- Javascript -->

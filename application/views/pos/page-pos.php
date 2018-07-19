@@ -121,11 +121,16 @@
 	  </ul>
 	</nav>
 </div>
-<div class="col-md-4">
+<div class="col-md-4" style="margin-bottom: 20px;">
 	<div class="panel panel-headline custom-panel">
 		<div class="panel-body">
-			<div class="add-cust">
-				<span class="fa fa-user-plus"></span><a href="" id="user"> Customer Baru</a>
+			<div class="container-fluid add-cust">
+				<div class="col-md-6 nopadding">
+					<span class="fa fa-user-plus"></span><a href="" id="user"> Customer Baru</a>
+				</div>
+				<div class="col-md-6 nopadding">
+					<span style="float: right;"><a href="" data-toggle="modal" data-target="#ModalListHold"> Tahan Pesanan (2)</a></span>
+				</div>
 			</div>
 			<div class="pricetotal">
 				<span id="left-list" style="font-size: 25px;">Grand Total</span>
@@ -359,4 +364,3 @@
 	</div>
 </div>
 <!-- END MODAL HOLD -->
-
