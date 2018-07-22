@@ -10,11 +10,13 @@ class Transfer extends CI_Controller {
 
 	public function index(){
 		$data['isi'] = "transfer/page-transfer";
+		$data['subtitle'] = "Transfer";
 		$data['title'] = 'Data Transfer Barang';
 		$this->load->view('layout',$data);
 	}
 	public function tambah(){
 		$data['isi'] = "transfer/tambah-transfer";
+		$data['subtitle'] = "Transfer";
 		$data['title'] = 'Tambah Data Transfer';
 		$this->load->view('layout',$data);
 	}

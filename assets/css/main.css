@@ -53,6 +53,79 @@ footer {
       text-align: center;
       position: relative !important; } }
 
+/*TOOLTIPS*/
+[tooltip]{
+  margin:20px;
+  position:relative;
+}
+[tooltip]::before {
+    content: "";
+    position: absolute;
+    top:-6px;
+    left:50%;
+    transform: translateX(-50%);
+    border-width: 4px 6px 0 6px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.7) transparent transparent     transparent;
+    z-index: 100;
+}
+[tooltip]::after {
+    content: attr(tooltip);
+    position: absolute;
+    left:50%;
+    top:-6px;
+    transform: translateX(-50%)   translateY(-100%);
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    color: #fff;
+    padding:4px 2px;
+    font-size: 12px;
+    min-width: 80px;
+    border-radius: 5px;
+    pointer-events: none;
+}
+[tooltip-position='left']::before{
+  left:0%;
+  top:50%;
+  margin-left:-12px;
+  transform:translatey(-50%) rotate(-90deg) 
+}
+[tooltip-position='top']::before{
+  left:50%;
+}
+[tooltip-position='bottom']::before{
+  top:100%;
+  margin-top:8px;
+  transform: translateX(-50%) translatey(-100%) rotate(-180deg)
+}
+[tooltip-position='right']::before{
+  left:100%;
+  top:50%;
+  margin-left:1px;
+  transform:translatey(-50%) rotate(90deg)
+}
+[tooltip-position='left']::after{
+  left:0%;
+  top:50%;
+  margin-left:-8px;
+  transform: translateX(-100%)   translateY(-50%);
+}
+[tooltip-position='top']::after{
+  left:50%;
+}
+[tooltip-position='bottom']::after{
+  top:100%;
+  margin-top:8px;
+  transform: translateX(-50%) translateY(0%);
+}
+[tooltip-position='right']::after{
+  left:100%;
+  top:50%;
+  margin-left:8px;
+  transform: translateX(0%)   translateY(-50%);
+}
+/*END TOOLTIPS*/
+
 /********************
  * LAYOUT
  ********************/
@@ -70,6 +143,15 @@ footer {
   position: fixed;
   left: 0; }
 
+#wrapper .wrapper-title{
+  width: 100%;
+  padding: 15px;
+  left: 0;
+  background: #fff;
+  position: relative;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
 #wrapper .main {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -82,20 +164,20 @@ footer {
  /* background-color: #f9fafb;*/ }
 
 #wrapper #sidebar-nav,
-#wrapper .main {
-  padding-top: 130px;
+#wrapper .wrapper-title {
+  padding-top: 135px;
    }
 
 @media screen and (max-width: 767px) {
   #wrapper #sidebar-nav,
-  #wrapper .main {
+  #wrapper .wrapper-title {
     padding-top: 80px; }
    }
 
 .layout-fullwidth #wrapper .sidebar {
   left: -260px; }
 
-.layout-fullwidth #wrapper .main {
+.layout-fullwidth #wrapper .wrapper-title {
   width: 100%; }
 
 .layout-fullwidth #wrapper .navbar {
@@ -107,7 +189,7 @@ footer {
 .offcanvas-active #wrapper .sidebar {
   left: 0; }
 
-.offcanvas-active #wrapper .main {
+.offcanvas-active #wrapper .wrapper-title {
   width: 100%;
   position: relative;
   left: 260px; }
@@ -115,7 +197,7 @@ footer {
 @media screen and (max-width: 1024px) {
   #wrapper .sidebar {
     left: -260px; }
-  #wrapper .main {
+  #wrapper .wrapper-title {
     width: 100%; }
   #wrapper .navbar {
     left: 0 !important; }
@@ -164,7 +246,7 @@ html.fullscreen-bg #wrapper {
   transition: all .5s ease;
   min-height: 60px;
   background: #ffffff;
-  box-shadow: 0 0 18px 0 rgba(67, 89, 102, 0.1); }
+  border-bottom: 1px solid #eee; }
   #topnav .has-submenu.active a {
     color: #71b6f9; }
     #topnav .has-submenu.active a i {
@@ -321,6 +403,7 @@ html.fullscreen-bg #wrapper {
     left: 0;
     z-index: 1000;
     border: 1px solid #e7e7e7;
+    border-top: none;
     padding: 15px 0;
     list-style: none;
     min-width: 200px;

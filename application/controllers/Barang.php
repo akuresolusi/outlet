@@ -12,6 +12,7 @@ class Barang extends CI_Controller {
 	public function index(){
 		$data['list'] = $this->barang_model->list_barang();
 		$data['isi'] = "barang/page-barang";
+		$data['subtitle'] = "Produk";
 		$data['title'] = 'Data Barang';
 		$this->load->view('layout',$data);
 	}
@@ -22,6 +23,7 @@ class Barang extends CI_Controller {
 		$data['warna'] = $this->master_model->detail_warna($data['barang']['idwarna']);
 		$data['listfoto'] = $this->barang_model->list_foto($data['barang']['id']);
 		$data['isi'] = "barang/view-barang";
+		$data['subtitle'] = "Produk";
 		$data['title'] = 'Lihat Data Barang';
 		$this->load->view('layout',$data);
 	}
@@ -37,6 +39,7 @@ class Barang extends CI_Controller {
 		$data['list_kategorip'] = $this->master_model->list_kategori_pelanggan();
 		$data['list_kategorih'] = $this->master_model->list_kategori_harga();
 		$data['isi'] =  "barang/tambah-barang";
+		$data['subtitle'] = "Produk";
 		$data['title'] = 'Tambah Data Barang';
 		$this->load->view('layout',$data);
 	}
@@ -96,6 +99,7 @@ class Barang extends CI_Controller {
 		$data['list_kategorih'] = $this->master_model->list_kategori_harga();
 
 		$data['isi'] =  "barang/update-barang";
+		$data['subtitle'] = "Produk";
 		$data['title'] = 'Perbarui Data Barang';
 		$this->load->view('layout',$data);
 	}
@@ -144,6 +148,7 @@ class Barang extends CI_Controller {
 		$data['list_foto'] = $this->barang_model->list_foto($this->input->get('id'));
 		$data['detail'] = $this->barang_model->detail_barang($this->input->get('id'));
 		$data['isi'] =  "barang/foto-barang";
+		$data['subtitle'] = "Produk";
 		$data['title'] = 'Upload Foto Barang';
 		$this->load->view('layout',$data);
 	}

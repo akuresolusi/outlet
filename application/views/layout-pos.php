@@ -59,7 +59,7 @@
 	    </div>
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav navbar-right">
-	      	<li><a href="<?php echo base_url() ?>pos"><i class="fa fa-home menu_r"></i> <span class="menu_r">POS</span></a></li>
+	      	<li><a href="<?php echo base_url() ?>pos"><i class="fa fa-home menu_r"></i> <span class="menu_r">POS</span></a></li> 
 	      	<li class="dropdown">
 		        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="menu_r"> Laporan</span>
 		        <span class="caret menu_r"></span></a>

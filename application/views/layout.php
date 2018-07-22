@@ -11,8 +11,6 @@
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/themify-icons/themify-icons.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/linearicons/style.css">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/flaticon/flaticon.css">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/chartist/css/chartist-custom.css">
 	<!-- MAIN CSS -->
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/main.css">
 	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
@@ -36,7 +34,7 @@
 			</div> -->
 	<header id="topnav">
             <div class="topbar-main">
-                <div class="container-fluid">
+                <div class="container">
 
                     <!-- Logo container-->
                     <div class="logo">
@@ -69,14 +67,13 @@
                             <li class="dropdown">
 					          <a href="#" class="dropdown-toggle nav-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="<?php echo base_url(); ?>assets/img/img-user.jpg" class="img-circle" alt="Avatar"></a>
 					          <ul class="dropdown-menu dropdown-menu-right">
-					          	<li><p id="name-user">Hi, Firman</p></li>
 					            <li><a href="#"><span class="ti-user"></span> Profile Saya</a></li>
 					            <li><a href="#"><span class="ti-lock"></span> Ganti Password</a></li>
 					            <li role="separator" class="divider"></li>
 					            <li><a href="<?php echo base_url(); ?>"><span class="ti-power-off"></span> Logout</a></li>
 					          </ul>
 					        </li>
-
+					        <p id="name-user">Hi, Agus Setiawan</p>
                         </ul>
                     </div>
                     <!-- end menu-extras -->
@@ -88,7 +85,7 @@
             <!-- end topbar-main -->
 
             <div class="navbar-custom">
-                <div class="container-fluid">
+                <div class="container">
                     <div id="navigation">
                         <!-- Navigation Menu-->
                         <ul class="navigation-menu">
@@ -129,9 +126,19 @@
         <!-- End Navigation Bar-->
 	<div id="wrapper">
 		<!-- MAIN -->
-		<div class="main">	
-			<?php $this->load->view($isi); ?>
-		</div>
+		<div class="wrapper-title">
+                <div class="container">
+                    <span id="sub-title"><?php echo $subtitle; ?></span>
+                    <h3 class="page-title"><?php echo $title; ?></h3>
+                </div>
+            </div>
+            <div class="container nopadding">
+                
+        		<div class="main">	
+
+        			<?php $this->load->view($isi); ?>
+        		</div>
+            </div>
 		<!-- END MAIN -->
 		<div class="clearfix"></div>
 		<footer>
@@ -146,12 +153,9 @@
         
 	<!-- Javascript -->
 	<script src="<?php echo base_url(); ?>assets/vendor/jquery/jquery.min.js"></script>
-	<script src="<?php echo base_url(); ?>assets/js/chosen.jquery.js"></script>
-	<script src="<?php echo base_url(); ?>assets/js/fullscreen.js"></script>
 	<script src="<?php echo base_url(); ?>assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script src="<?php echo base_url(); ?>assets/vendor/jQuery-slimScroll-1.3.8/jquery.slimscroll.min.js"></script>
 	<script src="<?php echo base_url(); ?>assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
-	<script src="<?php echo base_url(); ?>assets/vendor/chartist/js/chartist.min.js"></script>
 	<script src="<?php echo base_url(); ?>assets/scripts/klorofil-common.js"></script>
 	<script src="<?php echo base_url() ?>assets/js/jquery.core.js"></script>
         <script src="<?php echo base_url() ?>assets/js/jquery.app.js"></script>

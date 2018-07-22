@@ -3,23 +3,29 @@
 <head>
 	<title>Faktur Pembelian</title>
 	<style>
+	html{
+		font-family: arial;
+		font-size: 12px;
+	}	
 	.grid-container {
 	  display: grid;
 	  grid-template-columns: auto auto;
 	}
 	.grid-item {
 	  background-color: rgba(255, 255, 255, 0.8);
-	  padding-bottom:10px;
+	  padding-bottom:0px;
 	}
 	.grid-item .title h2{
-		margin-top: 30px;
-		font-size: 25px;
+		margin-top: 2px;
+		font-size: 23px;
+		margin-bottom: 0;
 		text-align: left;
 	}
 	.grid-item .logo{
 		float: right;
 		margin: 0;
 		text-align: center;
+		margin-top: 0px;
 	}
 	.grid-item .logo p{
 		margin: 0;
@@ -31,7 +37,7 @@
 	}
 	.grid-item .to{
 		height: 100px;
-		width: 95%;
+		width: 90%;
 		margin-top:10px;
 		border-radius:10px;
 		padding: 5px;
@@ -40,8 +46,7 @@
 	.grid-item .details{
 		width: 100%;
 		padding: 20px 10px 0 10px;
-		height: 140px;
-		font-size: 14px;
+		height: 100px;
 	}
 	.nopadding{
 		padding: 0;
@@ -63,7 +68,6 @@
 		font-size: 12px;
 		border-top:1px solid #000;
 		border-bottom:1px solid #000;
-		text-transform: uppercase;
 	}
 	.container table th{
 		padding: 5px;	
@@ -86,7 +90,7 @@
 		width: 25%;
 		display: inline-block;
 		border-bottom: 1px solid #000;
-		margin-right: 15px;
+		margin-right: 20px;
 		text-align: center;
 		font-weight: bold;
 		text-transform: uppercase;
@@ -103,23 +107,20 @@
 	</style>
 </head>
 <body>
-<div class="grid-container" style="border-bottom: 2px solid #000;">
+<div class="grid-container">
 	<div class="grid-item">
 		<div class="title">
-			<h2>FAKTUR PEMBELIAN BARANG</h2>
+			<h2>FAKTUR PEMBELIAN</h2>
 		</div>
 	</div>
 	  <div class="grid-item" style="font-size: 14px;">
 	  	<div class="logo">
-	  		<img src="../../../assets/img/logo-akure.png" width="150">
-	  		<p>PT. AKURE SOLUSI</p>
-	  		<span>Jln. Sunggal No.14, Medan Sunggal</span>
-	  		<p style="font-weight: normal;">061-123-456</p>
+	  		<img src="../../../assets/img/logo-akure.png" width="130">
 	  	</div>
 	  </div>
 </div>
-<div class="grid-container" style="padding-bottom: 0;">
-	<div class="grid-item" style="padding-top:10px;">
+<div class="grid-container">
+	<div class="grid-item">
 		<span>Kepada Yth :</span>
 		<div class="to">
 			<table>
@@ -147,32 +148,32 @@
 				<tbody>
 					<tr>
 						<td><b>Nomor Faktur</b></td>
-						<td>:</td>
+						<td width="80"></td>
 						<td>FB-8</td>
 					</tr>
 					<tr>
 						<td><b>Nomor Referensi</b></td>
-						<td>:</td>
+						<td></td>
 						<td>123</td>
 					</tr>
 					<tr>
 						<td><b>Tgl. Penerimaan</b></td>
-						<td>:</td>
+						<td></td>
 						<td>09 Mei 2018</td>
 					</tr>
 					<tr>
 						<td><b>Tgl. Jatuh Tempo</b></td>
-						<td>:</td>
+						<td></td>
 						<td>30 Mei 2018</td>
 					</tr>
 					<tr>
 						<td><b>Cara Bayar</b></td>
-						<td>:</td>
+						<td></td>
 						<td>CASH</td>
 					</tr>
 					<tr>
 						<td><b>Keterangan</b></td>
-						<td>:</td>
+						<td></td>
 						<td></td>
 					</tr>
 				</tbody>
@@ -185,37 +186,40 @@
 	<table>
 		<thead>
 			<th width="20">No.</th>
-			<th width="350">Nama Barang</th>
+			<th width="400">Nama Barang</th>
+			<th width="60">Satuan</th>
 			<th width="40">Qty</th>
 			<th width="150">Harga</th>
-			<th width="150">Sub Total</th>
+			<th width="150">Subtotal</th>
 		</thead>
 		<tbody>
 			<tr>
 				<td>1</td>
 				<td>AC Akira AC-S10CUG INP (O)</td>
+				<td>PAC</td>
 				<td>10</td>
-				<td>200000</td>
-				<td>Rp. 2000000</td>
+				<td>Rp 200000</td>
+				<td>Rp 2000000</td>
 			</tr>
 			<tr>
 				<td>2</td>
 				<td>Rice Cooker SHARP KS-A18TTR</td>
+				<td>Unit</td>
 				<td>10</td>
-				<td>200000</td>
-				<td>Rp. 2000000</td>
+				<td>Rp 200000</td>
+				<td>Rp 2000000</td>
 			</tr>
 			<tr>
 				<td>3</td>
 				<td>Yundai Kipas Angin RYEF16</td>
+				<td>Unit</td>
 				<td>10</td>
-				<td>200000</td>
-				<td>Rp. 2000000</td>
+				<td>Rp 200000</td>
+				<td>Rp 2000000</td>
 			</tr>
 		</tbody>
 	</table>
 	<div class="say">
-		<p><b>Terbilang : </b></p>
 		<div class="sign">
 			<p id="sign-title">Penerima</p>
 			<p>(Nama Penerima)</p>
@@ -228,8 +232,8 @@
 	<div class="detailsprice">
 		<table style="border:none;">
 			<tr>
-				<td>Sub Total</td>
-				<td>Rp. 20.000</td>
+				<td>Subtotal</td>
+				<td>Rp 20.000</td>
 			</tr>
 			<tr>
 				<td>Ppn</td>
@@ -240,8 +244,8 @@
 				<td>0%</td>
 			</tr>
 			<tr>
-				<td>Grand Total</td>
-				<td>Rp. 20.000</td>
+				<td>Total</td>
+				<td>Rp 20.000</td>
 			</tr>
 		</table>
 	</div>

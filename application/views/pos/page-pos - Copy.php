@@ -1,11 +1,6 @@
-<style type="text/css">
-	.btn-small{
-	  padding: 5px 10px;
-	  font-size: 12px;
-}
-</style>
-<div class="col-md-7" style="margin: -5px -10px 0 -10px">
-		<!-- FORM SEARCH -->
+<div class="col-md-7" style="margin:-10px; margin-bottom: 30px;">
+	<!-- PENCARIAN -->
+	<div class="col-md-12" style="padding: 5px 5px 0px 5px;">
 		<form class="search" action="#">
           <div class="input-group stylish-input-group">
             <input type="text" class="form-control" id="custom-search"  placeholder="Cari Barang atau Scan" >
@@ -19,37 +14,187 @@
               </span>
             </div>
       	</form>
-      	<!-- END FORM SEARCH -->
+	</div>
+	<!-- END -->
 
-	      	<!-- LIST PRODUCT -->
-  	<div class="panel panel-headline custom-product">
-		<div class="panel-body">
-	      	<div id="listproduct">
-		      	<table class="table">
-		      		<tbody>
-		      			<tr>
-		      				<td width="10">1.</td>
-		      				<td>1202176329217</td>
-		      				<td width="400">OBAT PUSING TENGAH</td>
-		      				<td width="150" align="right">Rp 500.000</td>
-		      				<td width="10" align="right">
-		      					<a href=""><span class="lnr lnr-plus-circle" style="font-size: 20px;"></span></a>
-		      				</td>
-		      			</tr>
-		      			<tr>
-		      				<td width="10">2.</td>
-		      				<td>1202176329217</td>
-		      				<td width="400">OBAT PUSING TENGAH</td>
-		      				<td width="150" align="right">Rp 500.000</td>
-		      				<td width="10" align="right">
-		      					<a href=""><span class="lnr lnr-plus-circle" style="font-size: 20px;"></span></a>
-		      				</td>
-		      			</tr>
-		      		</tbody>
-		      	</table>
-	      	</div>
-	      	<!-- END LIST PRODUCT -->
+	
+	<!-- PRODUCT -->
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<p class="title">Aluminium Hidroksida</p>
 		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<span class="title">Aminoglikosida</span>
+		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<span class="title">Amlodipine</span>
+		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<span class="title">Analgetik-Antipiretik</span>
+		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<span class="title">Asam Ursodeoksikolat</span>
+		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<span class="title">Betametason Topikal</span>
+		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<p class="title">Cyclophosphamide</p>
+		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<p class="title">Diethylcarbamazsadasdasine</p>
+		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<span class="title">Docosahexaenoic Acid (DHA)</span>
+		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<span class="title">Lysine dan Asam Amino Esensial Oral</span>
+		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<span class="title">Obat Antiinflamasi Nonsteroid</span>
+		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<span class="title">Vitamin D</span>
+		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<span class="title">Phenylpropanolamine</span>
+		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<span class="title">Magnesium Hidroksida</span>
+		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<span class="title">Lactobacillus Acidophilus</span>
+		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<span class="title">Hyoscine Butylbromide</span>
+		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<span class="title">Human Chorionic Gonadotropin (HCG)</span>
+		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<span class="title">Ethambutol</span>
+		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<span class="title">Ephedrine Tetes Hidung</span>
+		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<span class="title">Cyclophosphamide</span>
+		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<span class="title">Asam Ursodeoksikolat</span>
+		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<span class="title">Analgetik-Antipiretik</span>
+		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<span class="title">Antagonis Kalsium</span>
+		</div>
+	</div>
+	</a>
+	<a href="#">
+	<div class="col-md-2 col-sm-6 item">
+		<div class="product">
+			<span class="title">Asam Borat Tetes Telinga</span>
+		</div>
+	</div>
+	</a>
+	<!-- END PRODUCT -->
+	<div class="col-md-12 nopadding">
+		<nav>
+		  <ul class="pager">
+		    <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+		    <li class="next"><a href="#">Next <span aria-hidden="true">&rarr;</span></a></li>
+		  </ul>
+		</nav>
 	</div>
 </div>
 
@@ -68,29 +213,63 @@
 				<span id="left-list" style="font-size: 25px;">Grand Total</span>
 					<span id="right-list" style="font-size: 25px; color: #3f51b5;">Rp. 10.000</span>
 			</div>
-			<div class="list-product-buy" id="wrapper">
+			<div class="list-product" id="wrapper">
 				<table class="table" id="custom-table">
 					<tbody>
 						<tr>
 							<td width="10">1.</td>
-							<td width="250">OBAT PUSING TENGAH</td>
+							<td width="200">Human Chorionic Gonadotropin (HCG)</td>
 							<td>
 								<input type="number" class="form-control qty"  value="1">
 							</td>
-		      				<td>
-		      					<select class="form-control satuan">
-		      						<option>Pcs</option>
-		      						<option>Butir</option>
-		      						<option>Tablet</option>
-		      						<option>Bungkus</option>
-		      					</select>
-		      				</td>
-							<td width="120">Rp 5.000.000</td>
-							<td width="10">
-								<a href="#"><span class="fa fa-trash" style="color: red;" title="Hapus"></span></a>
+							<td>
+								<select class="form-control satuan">
+									<option>Unit</option>
+									<option>Buah</option>
+									<option>Botol</option>
+									<option>Tablet</option>
+									<option>Butir</option>
+								</select>
 							</td>
+							<td width="100">Rp 500.000</td>
+							<td width="10"><a href="#"><span class="fa fa-trash remove" title="Hapus"></span></a></td>
 						</tr>
-						
+						<tr>
+							<td width="10">1.</td>
+							<td width="200">Human Chorionic Gonadotropin (HCG)</td>
+							<td>
+								<input type="number" class="form-control qty"  value="1">
+							</td>
+							<td>
+								<select class="form-control satuan">
+									<option>Unit</option>
+									<option>Buah</option>
+									<option>Botol</option>
+									<option>Tablet</option>
+									<option>Butir</option>
+								</select>
+							</td>
+							<td width="100">Rp 500.000</td>
+							<td width="10"><a href="#"><span class="fa fa-trash remove" title="Hapus"></span></a></td>
+						</tr>
+						<tr>
+							<td width="10">1.</td>
+							<td width="200">Human Chorionic Gonadotropin (HCG)</td>
+							<td>
+								<input type="number" class="form-control qty"  value="1">
+							</td>
+							<td>
+								<select class="form-control satuan">
+									<option>Unit</option>
+									<option>Buah</option>
+									<option>Botol</option>
+									<option>Tablet</option>
+									<option>Butir</option>
+								</select>
+							</td>
+							<td width="100">Rp 500.000</td>
+							<td width="10"><a href="#"><span class="fa fa-trash remove" title="Hapus"></span></a></td>
+						</tr>
 
 					</tbody>
 				</table>

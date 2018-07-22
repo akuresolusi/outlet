@@ -39,14 +39,6 @@
 </style>
 <div class="main-content">
 	<div class="container-fluid">
-	<div class="panel panel-default panel-title">
-		<div class="panel-body title-pos">
-			<div class="col-md-6" style="padding: 0;">
-				<span id="sub-title">Produk</span>
-				<h3 class="page-title"><?php echo $title; ?></h3>
-			</div>
-		</div>
-	</div>
 	<div class="panel panel-headline">
 		  <div class="panel-body">
             <ul class="nav nav-tabs" role="tablist">

@@ -3,16 +3,8 @@
 <div class="main-content">
 	<div class="container-fluid">
 		<div class="panel panel-default panel-title">
-			<div class="panel-body title-pos">
-				<div class="col-md-6" style="padding: 0;">
-					<span id="sub-title">Produk</span>
-					<h3 class="page-title"><?php echo $title; ?></h3>
-				</div>
-			</div>
-		</div>
-		<div class="panel panel-default panel-title">
 			<div class="panel-body title-pos body-blue">
-				<div class="col-md-12">
+				<div class="col-md-12 nopadding">
 					<div class="form-group col-md-3">
 				    	<label>Dari</label> 
 				    	<input type="text" required="" class="form-control" readonly="">
@@ -35,7 +27,7 @@
 				  	</div>
 				    <div class="col-md-4">
 				    	<input type="hidden" id="faktur" name="faktur" value="" required="">
-			    		<span id="sub-total">No Transaksi. <span class="indigo">TH-001</span></span>
+			    		<span id="sub-total">No. <span class="indigo">TH-001</span></span>
 				    </div>
 					
 				</div>

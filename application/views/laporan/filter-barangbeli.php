@@ -6,11 +6,8 @@
 				<div class="container nopadding">
 					<form>
 						<div class="form-group col-md-3">
-					    	<label>Lokasi</label> 
-					    	<select class="form-control">
-					    		<option>Semua Toko</option>
-					    		<option>Toko 1</option>
-					    	</select>
+					    	<label>Nama Barang</label> 
+					    	<input type="text" required="" class="form-control">
 					    </div>
 						<div class="form-group col-md-3">
 					    	<label>Dari Tanggal</label> 
@@ -36,28 +33,32 @@
 				<table class="table table-striped">
 					<thead>
 						<th width="10">No</th>
-						<th style="text-align: left;">Nama Barang</th>
-						<th style="text-align: right;">Stok Masuk</th>
-						<th style="text-align: right;">Stok Keluar</th>
-						<th style="text-align: right;">Stok Ahir</th>
+						<th>Nama Barang</th>
+						<th>Supplier</th>
+						<th>Tgl Penerimaan</th>
+						<th>Jatuh Tempo</th>
+						<th>Sub Total</th>
+						<th>Disc</th>
+						<th>Total</th>
 					</thead>
 					<tbody>
 						<tr>
 							<td>1</td>
-							<td><a href="#" data-toggle="tooltip" data-placement="top" title="Detail Barang">Kulkas Sharp Side Bye Side SJIF85PBSL</a></td>
-							<td align="right">10</td>
-							<td align="right">5</td>
-							<td align="right">5</td>
+							<td>FB-3</td>
+							<td>Firman</td>
+							<td>05 Apr 2018</td>
+							<td>10 Apr 2018</td>
+							<td align="right">Rp. 22.829.291</td>
+							<td align="right">0%</td>
+							<td align="right">Rp. 22.829.291</td>
 						</tr>
 						<tr>
-							<td colspan="2"><b>Grand Total</b></td>
-							<td align="right"><b>10</b></td>
-							<td align="right"><b>5</b></td>
-							<td align="right"><b>5</b></td>
+							<td colspan="7"><b>Grand Total</b></td>
+							<td align="right"><b>Rp. 22.829.291</b></td>
 						</tr>
 					</tbody>
 				</table>
-				<a href="<?php echo base_url(); ?>laporan/produk" class="btn btn-warning"><span class="fa fa-arrow-left"></span> Kembali</a>
+				<a href="<?php echo base_url(); ?>laporan/pembelian" class="btn btn-warning"><span class="fa fa-arrow-left"></span> Kembali</a>
 				<a href="#" class="btn btn-success"><span class="fa fa-print"></span> Print</a>
 			</div>
 		</div>
