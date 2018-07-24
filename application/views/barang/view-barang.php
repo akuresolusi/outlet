@@ -37,6 +37,19 @@
     display: block;
 }
 </style>
+<div class="container">
+  <ul class="page-breadcrumb breadcrumb">
+      <li>
+          <a href="<?php echo base_url(); ?>dashboard">Home</a>
+      </li>
+      <li>
+          <a href="<?php echo base_url(); ?>barang">Data Barang</a>
+      </li>
+      <li>
+        <span><?php echo $title; ?></span>
+      </li>
+  </ul>
+</div>
 <div class="main-content">
 	<div class="container-fluid">
 	<div class="panel panel-headline">
@@ -48,6 +61,13 @@
             <div class="tab-content" style="margin-bottom: -30px;">
                 <div role="tabpanel" class="tab-pane active" id="profil">
                     <div class="row">
+                      <?php 
+                        if($barang['status'] =="Aktif"){
+                          $label = "<span class='label label-success'>".$barang['status']."</span>";
+                        }else{
+                          $label = "<span class='label label-danger'>".$barang['status']."</span>";
+                        }
+                      ?>
                         <div class="col-md-6">
                         <ul class="list-group">
                             <li class="list-group-item">
@@ -83,7 +103,7 @@
                               </li>
                               <li class="list-group-item">
                                   <p class="text-muted title">Status</p>
-                                  <h4 class="content"><span class='label label-success'><?php echo $barang['status'] ?></span></h4>
+                                  <h4 class="content"><?php  echo "$label" ?></span></h4>
                               </li> 
                         </ul>
                     </div>
@@ -116,9 +136,11 @@
                     </div>
                 </div>
             </div>
-           <div class="container-fluid">
-               <a href="<?php echo base_url(); ?>barang" class="btn btn-warning" style="margin-bottom: 20px;""><span class="fa fa-list"></span> Daftar Barang</a>
-           </div> 
+           <div class="container">
+              <div class="col-md-12" style="padding: 0 10px;">
+                 <a href="<?php echo base_url(); ?>barang" class="btn btn-warning" style="margin-bottom: 20px;""><span class="fa fa-list"></span> Daftar Barang</a>
+             </div> 
+           </div>
 			</div>
 		</div>
 	</div>

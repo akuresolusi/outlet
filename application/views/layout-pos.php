@@ -9,8 +9,7 @@
 	<!-- VENDOR CSS -->
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/themify-icons/themify-icons.css">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/linearicons/style.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/simple-line-icons/simple-line-icons.min.css">
 		<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/demo.css">
@@ -55,7 +54,7 @@
 	        <span class="icon-bar" id="custom-icon"></span>
 	        <span class="icon-bar" id="custom-icon"></span>
 	      </button>
-	      <a class="navbar-brand" href="#"><img src="<?php echo base_url() ?>assets/img/logo-wht.png" width="130"></a>
+	      <a class="navbar-brand" href="<?php echo base_url() ?>pos"><img src="<?php echo base_url() ?>assets/img/logo-white.png" width="130"></a>
 	    </div>
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav navbar-right">
@@ -64,16 +63,16 @@
 		        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="menu_r"> Laporan</span>
 		        <span class="caret menu_r"></span></a>
 		        <ul class="dropdown-menu">
-		          <li><a href="<?php echo base_url() ?>pos/today"><i class="fa fa-dollar"></i> Pendapatan Hari Ini</a></li>
-		          <li><a href="<?php echo base_url() ?>pos/all"><i class="fa fa-calendar"></i> Keseluruhan Transaksi</a></li>
-		          <li><a href="#"><i class="fa fa-cubes"></i> Top Produk Terjual</a></li>
+		          <li><a href="<?php echo base_url() ?>pos/today"><i class="icon-wallet"></i> Pendapatan Hari Ini</a></li>
+		          <li><a href="<?php echo base_url() ?>pos/all"><i class="icon-list"></i> Keseluruhan Transaksi</a></li>
+		          <li><a href="#" data-toggle="modal" data-target="#ModalTop"><i class="icon-fire"></i> Top Produk Terjual</a></li>
 		        </ul>
      	 	</li>
 	      	<li class="dropdown">
 		        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="menu_r"> Agus Setiawan</span>
 		        <span class="caret menu_r"></span></a>
 		        <ul class="dropdown-menu">
-		          <li><a href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+		          <li><a href="#"><i class="icon-logout"></i> Logout</a></li>
 		        </ul>
      	 	</li>
 	      </ul>
@@ -90,6 +89,50 @@
 		</div>
 	</footer>
 
+	<!-- MODAL HOLD -->
+	<div class="modal fade" id="ModalTop" role="dialog">
+	    <div class="modal-dialog">
+	    
+	      <!-- Modal content-->
+		  	<div class="modal-content">
+			    <div class="modal-header">
+			      <button type="button" class="close" data-dismiss="modal">&times;</button>
+			      <h4 class="modal-title"><b><i class="icon-fire"></i> Top Produk</b></h4>
+			    </div>
+			    <div class="modal-body">
+			      <div class="container-fluid">
+			      	<table class="table">
+			      		<thead>
+			      			<th width="10">No.</th>
+			      			<th width="280">Nama Barang</th>
+			      			<th>Terjual</th>
+			      			<th>Total</th>
+			      		</thead>
+			      		<tbody>
+			      			<tr>
+				      			<td>1</td>
+				      			<td>Obat Kuat</td>
+				      			<td>20</td>
+				      			<td>Rp 230.000</td>
+			      			</tr>
+			      			<tr>
+				      			<td>2</td>
+				      			<td>Obat Super Kuat</td>
+				      			<td>20</td>
+				      			<td>Rp 230.000</td>
+			      			</tr>
+			      		</tbody>
+			      	</table>
+			      </div>
+			    </div>
+			    <div class="modal-footer">
+			      <button type="button" class="btn btn-danger" data-dismiss="modal">Tutup</button>
+			    </div>
+		 	 </div>
+		  
+		</div>
+	</div>
+	<!-- END MODAL HOLD -->
 
 	<!-- Javascript -->
 	<script src="<?php echo base_url(); ?>assets/js/jquery-3.3.1.min.js"></script>

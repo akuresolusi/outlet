@@ -1,4 +1,17 @@
 <!-- MAIN CONTENT -->
+<div class="container">
+	<ul class="page-breadcrumb breadcrumb">
+	    <li>
+	        <a href="<?php echo base_url(); ?>dashboard">Home</a>
+	    </li>
+	    <li>
+	        <a href="<?php echo base_url(); ?>laporan/penjualan">Laporan Penjualan</a>
+	    </li>	
+	    <li>
+	    	<span><?php echo $title; ?></span>
+	    </li>
+	</ul>
+</div>
 <div class="main-content">
 	<div class="container-fluid">
 		<div class="panel panel-default panel-title">

@@ -5,10 +5,13 @@ class Pos extends CI_Controller {
 
 	public function __construct(){
 		parent::__construct();
+		$this->load->model('master_model');
+		$this->load->model('pos_model');
 		
 	}
 
 	public function index(){
+		$data['list'] = $this->pos_model->list_barang();
 		$data['content'] =  "pos/page-pos";
 		$data['title'] = 'Point Of Sale';
 		$this->load->view('layout-pos',$data);

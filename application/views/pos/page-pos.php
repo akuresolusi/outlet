@@ -1,3 +1,4 @@
+
 <style type="text/css">
 	.btn-small{
 	  padding: 5px 10px;
@@ -23,28 +24,26 @@
 
 	      	<!-- LIST PRODUCT -->
   	<div class="panel panel-headline custom-product">
-		<div class="panel-body">
-	      	<div id="listproduct">
+		<div class="panel-body" style="padding: 0 0 20px 0px;">
+	      	<div class="list-product" id="list-p">
 		      	<table class="table">
 		      		<tbody>
-		      			<tr>
-		      				<td width="10">1.</td>
-		      				<td>1202176329217</td>
-		      				<td width="400">OBAT PUSING TENGAH</td>
-		      				<td width="150" align="right">Rp 500.000</td>
-		      				<td width="10" align="right">
-		      					<a href=""><span class="lnr lnr-plus-circle" style="font-size: 20px;"></span></a>
-		      				</td>
-		      			</tr>
-		      			<tr>
-		      				<td width="10">2.</td>
-		      				<td>1202176329217</td>
-		      				<td width="400">OBAT PUSING TENGAH</td>
-		      				<td width="150" align="right">Rp 500.000</td>
-		      				<td width="10" align="right">
-		      					<a href=""><span class="lnr lnr-plus-circle" style="font-size: 20px;"></span></a>
-		      				</td>
-		      			</tr>
+		      			<?php
+							$i=0;
+							foreach ($list as $value) {
+								$i++;
+								echo"
+								<tr>
+									<td width='10'>".$i.".</td>
+									<td>".$value['kode']."</td>
+									<td width='400'>".$value['nama']."</td>
+									<td width='150'>Rp ".$value['hargadasar']."</td>
+									<td width='10' align='right'>
+				      					<a href=''><span class='icon-plus' style='font-size: 20px;''></span></a>
+				      				</td>
+								</tr>";
+							}
+							?>
 		      		</tbody>
 		      	</table>
 	      	</div>
@@ -66,7 +65,7 @@
 			</div>
 			<div class="pricetotal">
 				<span id="left-list" style="font-size: 25px;">Grand Total</span>
-					<span id="right-list" style="font-size: 25px; color: #3f51b5;">Rp. 10.000</span>
+					<span id="right-list" style="font-size: 25px; color: #3f51b5;">Rp. 10.000.000</span>
 			</div>
 			<div class="list-product-buy" id="wrapper">
 				<table class="table" id="custom-table">
@@ -87,7 +86,7 @@
 		      				</td>
 							<td width="120">Rp 5.000.000</td>
 							<td width="10">
-								<a href="#"><span class="fa fa-trash" style="color: red;" title="Hapus"></span></a>
+								<a href="#"><span class="fa fa-trash" style="color: red; font-size: 16px;" title="Hapus"></span></a>
 							</td>
 						</tr>
 						

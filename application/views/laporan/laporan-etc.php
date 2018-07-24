@@ -1,6 +1,16 @@
 <!-- MAIN CONTENT -->
+<div class="container">
+	<ul class="page-breadcrumb breadcrumb">
+	    <li>
+	        <a href="<?php echo base_url(); ?>dashboard">Home</a>
+	    </li>	
+	    <li>
+	    	<span><?php echo $title; ?></span>
+	    </li>
+	</ul>
+</div>
 <div class="main-content">
-		<div class="container-fluid">
+		<div class="container nopadding">
 			
 			<div class="col-md-6 col-sm-6 nopadding">
 				<a href="<?php echo base_url() ?>laporan/hutang">

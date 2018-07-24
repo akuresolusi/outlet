@@ -1,4 +1,4 @@
-<div class="panel panel-default panel-title">
+<div class="panel panel-default panel-title" style="border: none; border-bottom: 1px solid #f5f5f5;">
 	<div class="panel-body title-pos">
 		<div class="col-md-6" style="padding: 0;">
     		<span id="sub-title">Laporan</span>

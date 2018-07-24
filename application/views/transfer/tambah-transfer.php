@@ -1,5 +1,18 @@
 <!-- MAIN CONTENT -->
 <?php echo form_open(''); ?>
+<div class="container">
+	<ul class="page-breadcrumb breadcrumb">
+	    <li>
+	        <a href="<?php echo base_url(); ?>dashboard">Home</a>
+	    </li>	
+	    <li>
+	        <a href="<?php echo base_url(); ?>transfer">Data Transfer Barang</a>
+	    </li>	
+	    <li>
+	    	<span><?php echo $title; ?></span>
+	    </li>
+	</ul>
+</div>
 <div class="main-content">
 	<div class="container-fluid">
 		<div class="panel panel-default panel-title">
@@ -61,8 +74,12 @@
 										<input type="text" id="namabarang" class="form-control" placeholder="Nama Barang" >
 					  				</td> 
 					  				<td><input type="number" id="qty" class="form-control"></td>
-					  				<td><input type="text"  class="form-control" placeholder="Satuan"></td>
-					  				<td><a id="tambah"><span class="lnr lnr-plus-circle" title="Tambah" style="font-size: 25px; cursor: pointer; float: right;"></span></a></td>
+					  				<td>
+					  					<select class="form-control">
+					  						<option>Pcs</option>
+					  					</select>
+					  				</td>
+					  				<td><a id="tambah"><span class="icon-plus" title="Tambah" style="font-size: 25px; cursor: pointer; float: right;"></span></a></td>
 					  			</tr>
 					  		</table>
 

@@ -1,4 +1,14 @@
 <!-- MAIN CONTENT -->
+<div class="container">
+	<ul class="page-breadcrumb breadcrumb">
+	    <li>
+	        <a href="<?php echo base_url(); ?>dashboard">Home</a>
+	    </li>
+	    <li>
+	    	<span><?php echo $title; ?></span>
+	    </li>
+	</ul>
+</div>
 <div class="main-content">
 		<div class="container-fluid">
 			<div class="panel panel-headline">
@@ -26,6 +36,11 @@
 								}else{
 									$status = "<li><a href='barang/on_barang?id=".$value['id']."'><span class='fa fa-check'></span> Aktif</a></li>";
 								}
+								if($value['status'] =="Aktif"){
+									$label = "<span class='label label-success'>".$value['status']."</span>";
+								}else{
+									$label = "<span class='label label-danger'>".$value['status']."</span>";
+								}
 								$jlhfoto = $this->barang_model->jlh_foto($value['id']);
 								$stok = $value['stok'];
 								if($stok < 1){ $stok = "-"; }
@@ -38,7 +53,7 @@
 									<td>".$value['modal']."</td>
 									<td align='center'>".$stok."</td>
 									<td align='center'>Rp ".$value['hargadasar']."</td>
-									<td align='center'><span class='label label-success'>".$value['status']."</span></td>
+									<td align='center'>".$label."</td>
 									<td style='text-align: left;'>
 										<div class='dropdown'>
 									        <a href='#' class='btn btn-primary btn-xs' data-toggle='dropdown' class='dropdown-toggle' role='button' aria-haspopup='true' aria-expanded='false' title='Tindakan'><span class='fa fa-gear'></span></a>

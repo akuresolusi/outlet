@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/themify-icons/themify-icons.css">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/linearicons/style.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/simple-line-icons/simple-line-icons.min.css">
 	<!-- MAIN CSS -->
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/main.css">
 	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
@@ -40,7 +40,7 @@
                     <div class="logo">
 
                         <a href="index.html" class="logo">
-                            <img src="<?php echo base_url() ?>assets/img/logo-wht.png" alt="" width="130" class="logo-large">
+                            <img src="<?php echo base_url() ?>assets/img/logo-white.png" alt="" width="130" class="logo-large">
                         </a>
 
                     </div>
@@ -66,14 +66,14 @@
 
                             <li class="dropdown">
 					          <a href="#" class="dropdown-toggle nav-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="<?php echo base_url(); ?>assets/img/img-user.jpg" class="img-circle" alt="Avatar"></a>
-					          <ul class="dropdown-menu dropdown-menu-right">
-					            <li><a href="#"><span class="ti-user"></span> Profile Saya</a></li>
-					            <li><a href="#"><span class="ti-lock"></span> Ganti Password</a></li>
-					            <li role="separator" class="divider"></li>
-					            <li><a href="<?php echo base_url(); ?>"><span class="ti-power-off"></span> Logout</a></li>
+					          <ul class="dropdown-menu dropdown-menu-right" style="border-radius: 0;">
+					            <li><a href="#"><i class="icon-user" style="margin-right: 5px; font-size: 12px;"></i> Profile Saya</a></li>
+					            <li><a href="#"><i class="icon-lock" style="margin-right: 5px; font-size: 12px;"></i> Ganti Password</a></li>
+                                <li class="divider"> </li>
+					            <li><a href="<?php echo base_url(); ?>"><i class="icon-key" style="margin-right: 5px; font-size: 12px;"></i> Logout</a></li>
 					          </ul>
 					        </li>
-					        <p id="name-user">Hi, Agus Setiawan</p>
+                            <p id="name-user">Hi, Firman</p>
                         </ul>
                     </div>
                     <!-- end menu-extras -->
@@ -90,10 +90,10 @@
                         <!-- Navigation Menu-->
                         <ul class="navigation-menu">
                             <li class="has-submenu">
-                                <a href="<?php echo base_url(); ?>dashboard"><i class="ti-dashboard red"></i> <span> Dashboard </span> </a>
+                                <a href="<?php echo base_url(); ?>dashboard"><i class="icon-grid red"></i> <span> Dashboard </span> </a>
                             </li>
                             <li class="has-submenu">
-                                <a href="#"><i class="ti-package blue"></i><span> Inventory </span> </a>
+                                <a href="#"><i class="icon-present blue"></i><span> Inventory </span> </a>
                                 <ul class="submenu">
                                     <li><a href="<?php echo base_url(); ?>barang"> Data Barang</a></li>
                                     <li><a href="<?php echo base_url(); ?>transfer"> Transfer Barang</a></li>
@@ -103,12 +103,12 @@
                                 
                             </li>
                             <li class="has-submenu">
-                                <a href="<?php echo base_url() ?>pos" target="_blank"><i class="ti-credit-card red"></i> <span> Point Of Sale </span> </a>
+                                <a href="<?php echo base_url() ?>pos" target="_blank"><i class="icon-screen-desktop green"></i> <span> Point Of Sale </span> </a>
                             </li>
                             
 
                             <li class="has-submenu">
-                                <a href="#"><i class="ti-agenda brown"></i><span> Laporan </span> </a>
+                                <a href="#"><i class="icon-bar-chart brown"></i><span> Laporan </span> </a>
                                 <ul class="submenu">
                                     <li><a href="<?php echo base_url() ?>laporan/produk" class=""> Laporan Produk</a></li>
 									<li><a href="<?php echo base_url() ?>laporan/pembelian" class=""> Laporan Pembelian</a></li>
@@ -125,10 +125,9 @@
         </header>
         <!-- End Navigation Bar-->
 	<div id="wrapper">
-		<!-- MAIN -->
-		<div class="wrapper-title">
+    		<!-- MAIN -->
+            <div class="wrapper-title">
                 <div class="container">
-                    <span id="sub-title"><?php echo $subtitle; ?></span>
                     <h3 class="page-title"><?php echo $title; ?></h3>
                 </div>
             </div>
@@ -139,14 +138,14 @@
         			<?php $this->load->view($isi); ?>
         		</div>
             </div>
-		<!-- END MAIN -->
-		<div class="clearfix"></div>
-		<footer>
-			<div class="container-fluid">
-				<p class="copyright">&copy; 2018 <a href="http://akure-solusi.com" target="_blank" id="Quick Count">Akure Solusi</a>. All Rights Reserved.</p>
-			</div>
-		</footer>
-	</div>
+    		<!-- END MAIN -->
+    		<div class="clearfix"></div>
+    		<footer>
+    			<div class="container-fluid">
+    				<p class="copyright">&copy; 2018 <a href="http://akure-solusi.com" target="_blank" id="Quick Count">Akure Solusi</a>. All Rights Reserved.</p>
+    			</div>
+    		</footer>
+    	</div>
 	<!-- END WRAPPER -->
 	
 		
